@@ -12,7 +12,7 @@ let baseURL = env == 'development' ? '/api' : '/'
 const instance = axios.create({
     baseURL,
     timeout:15000
-})
+});
 const xhr = {
     get(url,data,config){
         return new Promise((resolve,reject)=>{
