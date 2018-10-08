@@ -6,7 +6,7 @@
         </div>
         <div class="w1170 " >
             <div class="article-wrap ">
-                <div class="article-item" v-for="item in content">
+                <div class="article-item" v-for="(item,index) in content" :key="index">
                     <div class="article-msg clearfix">
                         <div class="avatar fll">
                             <img :src="item.author.avatar" >

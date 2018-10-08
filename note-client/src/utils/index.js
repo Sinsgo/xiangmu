@@ -14,7 +14,7 @@ const instance = axios.create({
     timeout:15000
 });
 const xhr = {
-    get(url,data,config){
+    get (url,data,config){
         return new Promise((resolve,reject)=>{
             instance.get(url,{params:data},config).then(res=>{
                 resolve(res.data)
